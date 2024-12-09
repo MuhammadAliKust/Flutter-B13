@@ -56,6 +56,55 @@ class MyApp extends StatelessWidget {
                 Icon(Icons.add),
                 Icon(Icons.add),
               ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.add),
+                Column(
+                  children: [
+                    Icon(Icons.add),
+                    Icon(Icons.add),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.add),
+                        Icon(Icons.add),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.add),
+                        Icon(Icons.add),
+                      ],
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.add),
+                    Row(
+                      children: [
+                        Icon(Icons.add),
+                        Icon(Icons.add),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.add),
+                        Icon(Icons.add),
+                      ],
+                    ),
+                    Icon(Icons.add),
+                  ],
+                )
+              ],
             )
           ],
         ),
