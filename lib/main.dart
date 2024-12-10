@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyAhjjkhpp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.green,
+        // backgroundColor: Colors.green,
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Text(
@@ -32,82 +32,10 @@ class MyApp extends StatelessWidget {
             const Icon(Icons.notifications),
           ],
         ),
-        body: const Column(
-          children: [
-            Text(
-              "Lorem Ipsum has been the industry's standard ",
-              style: TextStyle(fontSize: 20, color: Colors.black),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ",
-              style: TextStyle(fontSize: 18),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Icon(Icons.add),
-                Icon(Icons.add),
-                Icon(Icons.add),
-                Icon(Icons.add),
-              ],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Icon(Icons.add),
-                Column(
-                  children: [
-                    Icon(Icons.add),
-                    Icon(Icons.add),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Icon(Icons.add),
-                        Icon(Icons.add),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Icon(Icons.add),
-                        Icon(Icons.add),
-                      ],
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Icon(Icons.add),
-                    Row(
-                      children: [
-                        Icon(Icons.add),
-                        Icon(Icons.add),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Icon(Icons.add),
-                        Icon(Icons.add),
-                      ],
-                    ),
-                    Icon(Icons.add),
-                  ],
-                )
-              ],
-            )
-          ],
-        ),
+        body: Image.asset('assets/images/1.png'),
+        // body: Image.network(
+        //   "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+        // ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: const Icon(
