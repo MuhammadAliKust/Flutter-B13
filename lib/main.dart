@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_b14/login.dart';
 
 import 'file_image.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FileImageView(),
+      home: LoginView(),
     );
   }
 }
