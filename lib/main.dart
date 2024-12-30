@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_b14/list_tile.dart';
 import 'package:flutter_b14/list_view_demo.dart';
 import 'package:flutter_b14/login.dart';
+import 'package:flutter_b14/single_selection.dart';
 
 import 'file_image.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ListViewDemo(),
+      home: SingleSelectionView(),
     );
   }
 }
