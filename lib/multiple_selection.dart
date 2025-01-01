@@ -26,7 +26,6 @@ class _MultipleSelectionViewState extends State<MultipleSelectionView> {
                 } else {
                   selectedIndex.add(i);
                 }
-
                 setState(() {});
               },
               leading: Icon(Icons.notifications),
