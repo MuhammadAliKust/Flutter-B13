@@ -10,9 +10,8 @@ class GridViewDemo extends StatelessWidget {
         title: Text("Grid View Demo"),
       ),
       body: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5,
-          crossAxisSpacing: 30,
-          mainAxisSpacing: 30),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 5, crossAxisSpacing: 30, mainAxisSpacing: 30),
           itemCount: 10,
           itemBuilder: (context, i) {
             return FlutterLogo();
