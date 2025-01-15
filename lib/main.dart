@@ -10,6 +10,7 @@ import 'package:flutter_b14/single_selection.dart';
 import 'package:flutter_b14/task_view.dart';
 
 import 'file_image.dart';
+import 'grid_view_task.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GridViewDemo(),
+      home: GridViewTask(),
     );
   }
 }
