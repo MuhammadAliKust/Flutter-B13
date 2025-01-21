@@ -8,6 +8,7 @@ import 'package:flutter_b14/login.dart';
 import 'package:flutter_b14/multiple_selection.dart';
 import 'package:flutter_b14/page_view.dart';
 import 'package:flutter_b14/single_selection.dart';
+import 'package:flutter_b14/tabbar_view.dart';
 import 'package:flutter_b14/task_view.dart';
 
 import 'file_image.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomBarView(),
+      home: TabbarViewDemo(),
     );
   }
 }
