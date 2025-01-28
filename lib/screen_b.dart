@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_b14/providers/user.dart';
+import 'package:provider/provider.dart';
 
 class ScreenBView extends StatelessWidget {
-  final String name;
-  final String email;
-
-  const ScreenBView({super.key, required this.name, required this.email});
-
   @override
   Widget build(BuildContext context) {
+    var user = Provider.of<UserProvider>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Screen B"),
@@ -15,8 +13,11 @@ class ScreenBView extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text(name,style: TextStyle(fontSize: 30),),
-            Text(email,style: TextStyle(fontSize: 30),),
+            Text(
+              user.getName,
+              style: TextStyle(fontSize: 30),
+            ),
+            // Text(email,style: TextStyle(fontSize: 30),),
           ],
         ),
       ),

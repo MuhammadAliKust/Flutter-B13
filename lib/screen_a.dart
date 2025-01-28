@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_b14/providers/user.dart';
 import 'package:flutter_b14/screen_b.dart';
+import 'package:provider/provider.dart';
 
 class ScreenAView extends StatelessWidget {
   ScreenAView({super.key});
 
-  String myName = "Ali";
-
   @override
   Widget build(BuildContext context) {
+    var user = Provider.of<UserProvider>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Screen A"),
@@ -15,13 +16,9 @@ class ScreenAView extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => ScreenBView(
-                            name: myName,
-                        email: 'test@gmail.com',
-                          )));
+              user.setName('Zain');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ScreenBView()));
             },
             child: Text("Go to Screen B")),
       ),
