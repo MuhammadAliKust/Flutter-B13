@@ -4,6 +4,7 @@ import 'package:flutter_b14/bottom_sheet.dart';
 import 'package:flutter_b14/dialog_box.dart';
 import 'package:flutter_b14/drop_down_button.dart';
 import 'package:flutter_b14/dynamic_list_view_demo.dart';
+import 'package:flutter_b14/google_map_demo.dart';
 import 'package:flutter_b14/grid_view.dart';
 import 'package:flutter_b14/list_tile.dart';
 import 'package:flutter_b14/list_view_demo.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DropDownButtonDemo(),
+      home: GoogleMapDemo(),
     );
   }
 }
