@@ -14,6 +14,7 @@ import 'package:flutter_b14/multiple_selection.dart';
 import 'package:flutter_b14/page_view.dart';
 import 'package:flutter_b14/providers/user.dart';
 import 'package:flutter_b14/screen_a.dart';
+import 'package:flutter_b14/search.dart';
 import 'package:flutter_b14/single_selection.dart';
 import 'package:flutter_b14/tabbar_view.dart';
 import 'package:flutter_b14/task_view.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CalculatorView(),
+      home: SearchView(),
     );
   }
 }
